@@ -6,7 +6,7 @@ connection = Bunny.new
 connection.start
 
 # Create a channel to utilize API calls
-channel = conneciton.create_channel
+channel = connection.create_channel
 
 # Create queue
 queue = channel.queue('hello')
